@@ -31,9 +31,9 @@ docker exec -t winstream容器名 bash wsserver.sh start
 docker exec -t winstream容器名 bash wsserver.sh stop
 docker exec -t winstream容器名 bash wsserver.sh status
 ```
-3. adminserver地址：http://<yourip>:14002/console
-   user:system   
-   passwd:wlsysadmin
-   portalserver: http://<yourip>:18793/sbm/bpmportal/login.jsp
-   user:ebms
+3. adminserver地址：http://<yourip>:14002/console    
+   user:system    
+   passwd:wlsysadmin    
+   portalserver: http://<yourip>:18793/sbm/bpmportal/login.jsp    
+   user:ebms    
    passwd: 12345678

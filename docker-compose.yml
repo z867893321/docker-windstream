@@ -1,0 +1,24 @@
+version: '2'
+services: 
+  oracle:
+    build: ./oracle
+    volumes:
+      - oracle-volume:/u01
+    ports:
+      - 1521:1521
+    environment:
+      - ORACLE_ALLOW_REMOTE=true
+  bpm:
+    build: ./
+    depends_on:
+      - oracle
+    volumes:
+      - bpm-volume:/opt/SBM764/conf/
+    ports:
+      - 14002:14002
+      - 18793:18793
+      - 16003:16003
+    hostname: hydsoft 
+volumes:
+  oracle-volume:
+  bpm-volume:

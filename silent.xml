@@ -1,0 +1,1459 @@
+################################################################################
+#
+# InstallShield Options File
+#
+# Wizard name: Setup
+# Wizard source: setup.jar
+# Created on: Wed Nov 15 06:25:45 GMT 2017
+# Created by: InstallShield Options File Generator
+#
+# This file contains values that were specified during a recent execution of
+# Setup. It can be used to configure Setup with the options specified below when
+# the wizard is run with the "-options" command line option. Read each setting's
+# documentation for information on how to change its value.
+# 
+# A common use of an options file is to run the wizard in silent mode. This lets
+# the options file author specify wizard settings without having to run the
+# wizard in graphical or console mode. To use this options file for silent mode
+# execution, use the following command line arguments when running the wizard:
+# 
+#    -options "silent.xml" -silent
+#
+################################################################################
+
+
+################################################################################
+#
+# State
+#
+# The initial state of the panel. Legal values are:
+# 
+#    0 - Nothing will be selected
+#    1 - "I &accept the terms of the license agreement." will be selected
+#    2 - "I &do not accept the terms of the license agreement." will be
+#        selected
+# 
+# For example, to configure the panel to initially display "I &do not accept the
+# terms of the license agreement.", use
+# 
+#    -W sbmLicense.selection=2
+#
+
+
+-W sbmLicense.selection=1
+
+
+################################################################################
+#
+# Progress Savvion BusinessManager 7.6.4 Install Location
+#
+# The install location of the product. Specify a valid directory into which the
+# product should be installed. If the directory contains spaces, enclose it in
+# double-quotes. For example, to install the product to C:Program FilesMy
+# Product, use
+# 
+#    -P installLocation="C:Program FilesMy Product"
+#
+
+
+-P installLocation="/opt/SBM764"
+
+
+################################################################################
+#
+# User Input Field - name
+#
+#
+
+
+-W host.name="hydsoft"
+
+
+################################################################################
+#
+# User Input Field - domain
+#
+#
+
+
+-W host.domain=""
+
+
+################################################################################
+#
+# User Input Field - bmAdminUsername
+#
+#
+
+
+-W bmadminUserCredentials.bmAdminUsername="ebms"
+
+
+################################################################################
+#
+# User Input Field - bmAdminPassword
+#
+#
+
+
+-W bmadminUserCredentials.bmAdminPassword="12345678"
+
+
+################################################################################
+#
+# User Input Field - confirmPw
+#
+#
+
+
+-W bmadminUserCredentials.confirmPw="12345678"
+
+
+################################################################################
+#
+# User Input Field - processorType
+#
+#
+
+
+-W getProcessorType.processorType="64bit"
+
+
+################################################################################
+#
+# User Input Field - appServerChoice
+#
+#
+
+
+-W appServerDecision.appServerChoice="wl10xChosen"
+
+
+################################################################################
+#
+# User Input Field - securityOption
+#
+#
+
+
+-W appServerDecision.securityOption=""
+
+
+################################################################################
+#
+# User Input Field - jndiProtocol
+#
+#
+
+
+-W appServerAdminPanelJB.jndiProtocol="jnp"
+
+
+################################################################################
+#
+# User Input Field - webProtocol
+#
+#
+
+
+-W appServerAdminPanelJB.webProtocol="http"
+
+
+################################################################################
+#
+# User Input Field - username
+#
+#
+
+
+-W appServerAdminPanelJB.username="guest"
+
+
+################################################################################
+#
+# User Input Field - password
+#
+#
+
+
+-W appServerAdminPanelJB.password="guest"
+
+
+################################################################################
+#
+# User Input Field - cnfPasswd
+#
+#
+
+
+-W appServerAdminPanelJB.cnfPasswd="guest"
+
+
+################################################################################
+#
+# User Input Field - jndiProtocol
+#
+#
+
+
+-W appServerAdminPanelPR.jndiProtocol="rmi"
+
+
+################################################################################
+#
+# User Input Field - webProtocol
+#
+#
+
+
+-W appServerAdminPanelPR.webProtocol="http"
+
+
+################################################################################
+#
+# User Input Field - username
+#
+#
+
+
+-W appServerAdminPanelPR.username="root"
+
+
+################################################################################
+#
+# User Input Field - password
+#
+#
+
+
+-W appServerAdminPanelPR.password="pramati"
+
+
+################################################################################
+#
+# User Input Field - cnfPasswd
+#
+#
+
+
+-W appServerAdminPanelPR.cnfPasswd="pramati"
+
+
+################################################################################
+#
+# User Input Field - jndiProtocol
+#
+#
+
+
+-W appServerAdminPanelWL.jndiProtocol="t3"
+
+
+################################################################################
+#
+# User Input Field - webProtocol
+#
+#
+
+
+-W appServerAdminPanelWL.webProtocol="http"
+
+
+################################################################################
+#
+# User Input Field - username
+#
+#
+
+
+-W appServerAdminPanelWL.username="system"
+
+
+################################################################################
+#
+# User Input Field - password
+#
+#
+
+
+-W appServerAdminPanelWL.password="wlsysadmin"
+
+
+################################################################################
+#
+# User Input Field - cnfPasswd
+#
+#
+
+
+-W appServerAdminPanelWL.cnfPasswd="wlsysadmin"
+
+
+################################################################################
+#
+# User Input Field - jndiProtocol
+#
+#
+
+
+-W appServerAdminPanelWS.jndiProtocol="corbaloc:iiop"
+
+
+################################################################################
+#
+# User Input Field - webProtocol
+#
+#
+
+
+-W appServerAdminPanelWS.webProtocol="http"
+
+
+################################################################################
+#
+# User Input Field - username
+#
+#
+
+
+-W appServerAdminPanelWS.username="root"
+
+
+################################################################################
+#
+# User Input Field - password
+#
+#
+
+
+-W appServerAdminPanelWS.password="pramati"
+
+
+################################################################################
+#
+# User Input Field - cnfPasswd
+#
+#
+
+
+-W appServerAdminPanelWS.cnfPasswd="pramati"
+
+
+################################################################################
+#
+# User Input Field - YES_NO
+#
+#
+
+
+-W precompileJSP.YES_NO="2"
+
+
+################################################################################
+#
+# User Input Field - serverLocn
+#
+#
+
+
+-W wl10x.serverLocn="/usr/weblogic1036/wlserver"
+
+
+################################################################################
+#
+# User Input Field - sbmDomainName
+#
+#
+
+
+-W wl10x.sbmDomainName="sbm76"
+
+
+################################################################################
+#
+# User Input Field - adminServerPort
+#
+#
+
+
+-W wl10xServerName.adminServerPort="14002"
+
+
+################################################################################
+#
+# User Input Field - ejbServerPort
+#
+#
+
+
+-W wl10xServerName.ejbServerPort="16003"
+
+
+################################################################################
+#
+# User Input Field - portalServerPort
+#
+#
+
+
+-W wl10xServerName.portalServerPort="18793"
+
+
+################################################################################
+#
+# User Input Field - remoteAntPort
+#
+#
+
+
+-W wl10xServerName.remoteAntPort="14005"
+
+
+################################################################################
+#
+# User Input Field - location
+#
+#
+
+
+-W wl10xDomain.location="/usr/weblogic1036/user_projects/domains/sbm76"
+
+
+################################################################################
+#
+# User Input Field - serverLocn
+#
+#
+
+
+-W jb5xeServer.serverLocn="$P(SBM.installDisk)$J(file.separator)jboss"
+
+
+################################################################################
+#
+# User Input Field - ejbServerPort
+#
+#
+
+
+-W jb5xeServerPort.ejbServerPort="16003"
+
+
+################################################################################
+#
+# User Input Field - portalServerPort
+#
+#
+
+
+-W jb5xeServerPort.portalServerPort="18793"
+
+
+################################################################################
+#
+# User Input Field - remoteAntPort
+#
+#
+
+
+-W jb5xeServerPort.remoteAntPort="14005"
+
+
+################################################################################
+#
+# User Input Field - confAdvJBossPorts
+#
+#
+
+
+-W jb5xeServerPort.confAdvJBossPorts=""
+
+
+################################################################################
+#
+# User Input Field - ejbServerHttp
+#
+#
+
+
+-W jb5xeAdvEjbServerPort.ejbServerHttp="16001"
+
+
+################################################################################
+#
+# User Input Field - ejbServerHttps
+#
+#
+
+
+-W jb5xeAdvEjbServerPort.ejbServerHttps="16002"
+
+
+################################################################################
+#
+# User Input Field - ejbServerWebservice
+#
+#
+
+
+-W jb5xeAdvEjbServerPort.ejbServerWebservice="16004"
+
+
+################################################################################
+#
+# User Input Field - ejbServerNamingRMI
+#
+#
+
+
+-W jb5xeAdvEjbServerPort.ejbServerNamingRMI="16005"
+
+
+################################################################################
+#
+# User Input Field - portalServerHttps
+#
+#
+
+
+-W jb5xeAdvPortalServerPort.portalServerHttps="18002"
+
+
+################################################################################
+#
+# User Input Field - portalServerNaming
+#
+#
+
+
+-W jb5xeAdvPortalServerPort.portalServerNaming="18003"
+
+
+################################################################################
+#
+# User Input Field - portalServerWebservice
+#
+#
+
+
+-W jb5xeAdvPortalServerPort.portalServerWebservice="18004"
+
+
+################################################################################
+#
+# User Input Field - portalServerNamingRMI
+#
+#
+
+
+-W jb5xeAdvPortalServerPort.portalServerNamingRMI="18005"
+
+
+################################################################################
+#
+# User Input Field - serverLocn
+#
+#
+
+
+-W jb511eServer.serverLocn="$P(SBM.installDisk)$J(file.separator)jboss"
+
+
+################################################################################
+#
+# User Input Field - ejbServerPort
+#
+#
+
+
+-W jb511eServerPort.ejbServerPort="16003"
+
+
+################################################################################
+#
+# User Input Field - portalServerPort
+#
+#
+
+
+-W jb511eServerPort.portalServerPort="18793"
+
+
+################################################################################
+#
+# User Input Field - remoteAntPort
+#
+#
+
+
+-W jb511eServerPort.remoteAntPort="14005"
+
+
+################################################################################
+#
+# User Input Field - confAdvJBossPorts
+#
+#
+
+
+-W jb511eServerPort.confAdvJBossPorts=""
+
+
+################################################################################
+#
+# User Input Field - ejbServerHttp
+#
+#
+
+
+-W jb511eAdvEjbServerPort.ejbServerHttp="16001"
+
+
+################################################################################
+#
+# User Input Field - ejbServerHttps
+#
+#
+
+
+-W jb511eAdvEjbServerPort.ejbServerHttps="16002"
+
+
+################################################################################
+#
+# User Input Field - ejbServerWebservice
+#
+#
+
+
+-W jb511eAdvEjbServerPort.ejbServerWebservice="16004"
+
+
+################################################################################
+#
+# User Input Field - ejbServerNamingRMI
+#
+#
+
+
+-W jb511eAdvEjbServerPort.ejbServerNamingRMI="16005"
+
+
+################################################################################
+#
+# User Input Field - portalServerHttps
+#
+#
+
+
+-W jb511eAdvPortalServerPort.portalServerHttps="18002"
+
+
+################################################################################
+#
+# User Input Field - portalServerNaming
+#
+#
+
+
+-W jb511eAdvPortalServerPort.portalServerNaming="18003"
+
+
+################################################################################
+#
+# User Input Field - portalServerWebservice
+#
+#
+
+
+-W jb511eAdvPortalServerPort.portalServerWebservice="18004"
+
+
+################################################################################
+#
+# User Input Field - portalServerNamingRMI
+#
+#
+
+
+-W jb511eAdvPortalServerPort.portalServerNamingRMI="18005"
+
+
+################################################################################
+#
+# User Input Field - ejbServerPort
+#
+#
+
+
+-W jb5xServerPort.ejbServerPort="16003"
+
+
+################################################################################
+#
+# User Input Field - portalServerPort
+#
+#
+
+
+-W jb5xServerPort.portalServerPort="18793"
+
+
+################################################################################
+#
+# User Input Field - remoteAntPort
+#
+#
+
+
+-W jb5xServerPort.remoteAntPort="14005"
+
+
+################################################################################
+#
+# User Input Field - confAdvJBossPorts
+#
+#
+
+
+-W jb5xServerPort.confAdvJBossPorts=""
+
+
+################################################################################
+#
+# User Input Field - ejbServerHttp
+#
+#
+
+
+-W jb5xAdvEjbServerPort.ejbServerHttp="16001"
+
+
+################################################################################
+#
+# User Input Field - ejbServerHttps
+#
+#
+
+
+-W jb5xAdvEjbServerPort.ejbServerHttps="16002"
+
+
+################################################################################
+#
+# User Input Field - ejbServerWebservice
+#
+#
+
+
+-W jb5xAdvEjbServerPort.ejbServerWebservice="16004"
+
+
+################################################################################
+#
+# User Input Field - ejbServerNamingRMI
+#
+#
+
+
+-W jb5xAdvEjbServerPort.ejbServerNamingRMI="16005"
+
+
+################################################################################
+#
+# User Input Field - portalServerHttps
+#
+#
+
+
+-W jb5xAdvPortalServerPort.portalServerHttps="18002"
+
+
+################################################################################
+#
+# User Input Field - portalServerNaming
+#
+#
+
+
+-W jb5xAdvPortalServerPort.portalServerNaming="18003"
+
+
+################################################################################
+#
+# User Input Field - portalServerWebservice
+#
+#
+
+
+-W jb5xAdvPortalServerPort.portalServerWebservice="18004"
+
+
+################################################################################
+#
+# User Input Field - portalServerNamingRMI
+#
+#
+
+
+-W jb5xAdvPortalServerPort.portalServerNamingRMI="18005"
+
+
+################################################################################
+#
+# User Input Field - ejbServerNamingPort
+#
+#
+
+
+-W prmtiPorts.ejbServerNamingPort="16003"
+
+
+################################################################################
+#
+# User Input Field - portalServerHttp
+#
+#
+
+
+-W prmtiPorts.portalServerHttp="18793"
+
+
+################################################################################
+#
+# User Input Field - remoteAntPort
+#
+#
+
+
+-W prmtiPorts.remoteAntPort="14005"
+
+
+################################################################################
+#
+# User Input Field - confAdvPramatiPorts
+#
+#
+
+
+-W prmtiPorts.confAdvPramatiPorts=""
+
+
+################################################################################
+#
+# User Input Field - ejbServerHttp
+#
+#
+
+
+-W advPrmtiPorts.ejbServerHttp="16001"
+
+
+################################################################################
+#
+# User Input Field - ejbServerHttps
+#
+#
+
+
+-W advPrmtiPorts.ejbServerHttps="16002"
+
+
+################################################################################
+#
+# User Input Field - classFile
+#
+#
+
+
+-W advPrmtiPorts.classFile="16004"
+
+
+################################################################################
+#
+# User Input Field - portalServerHttps
+#
+#
+
+
+-W advPrmtiPorts.portalServerHttps="18002"
+
+
+################################################################################
+#
+# User Input Field - portalServerNamingPort
+#
+#
+
+
+-W advPrmtiPorts.portalServerNamingPort="18003"
+
+
+################################################################################
+#
+# User Input Field - portalServerClassFile
+#
+#
+
+
+-W advPrmtiPorts.portalServerClassFile="18004"
+
+
+################################################################################
+#
+# User Input Field - serverLocn
+#
+#
+
+
+-W ws6x.serverLocn="$P(ws6xComponent.ws6xLocn)"
+
+
+################################################################################
+#
+# User Input Field - profileLoc
+#
+#
+
+
+-W ws6x.profileLoc="$P(ws6xComponent.ws6xLocn)/profiles"
+
+
+################################################################################
+#
+# User Input Field - profileName
+#
+#
+
+
+-W ws6x.profileName="sbm76"
+
+
+################################################################################
+#
+# User Input Field - cellName
+#
+#
+
+
+-W ws6x.cellName="$W(host.name)sbm76cell"
+
+
+################################################################################
+#
+# User Input Field - nodeName
+#
+#
+
+
+-W ws6x.nodeName="$W(host.name)sbm76node"
+
+
+################################################################################
+#
+# User Input Field - ejbServerJndiPort
+#
+#
+
+
+-W wsServerName.ejbServerJndiPort="16003"
+
+
+################################################################################
+#
+# User Input Field - portalHttpPort
+#
+#
+
+
+-W wsServerName.portalHttpPort="18793"
+
+
+################################################################################
+#
+# User Input Field - portalSslPort
+#
+#
+
+
+-W wsServerName.portalSslPort="18002"
+
+
+################################################################################
+#
+# User Input Field - portalServerJndiPort
+#
+#
+
+
+-W wsServerName.portalServerJndiPort="18003"
+
+
+################################################################################
+#
+# User Input Field - remoteAntPort
+#
+#
+
+
+-W wsServerName.remoteAntPort="14005"
+
+
+################################################################################
+#
+# User Input Field - serverLocn
+#
+#
+
+
+-W ws7x.serverLocn="$P(ws7xComponent.ws7xLocn)"
+
+
+################################################################################
+#
+# User Input Field - profileLoc
+#
+#
+
+
+-W ws7x.profileLoc="$P(ws7xComponent.ws7xLocn)/profiles"
+
+
+################################################################################
+#
+# User Input Field - profileName
+#
+#
+
+
+-W ws7x.profileName="sbm76"
+
+
+################################################################################
+#
+# User Input Field - cellName
+#
+#
+
+
+-W ws7x.cellName="$W(host.name)sbm76cell"
+
+
+################################################################################
+#
+# User Input Field - nodeName
+#
+#
+
+
+-W ws7x.nodeName="$W(host.name)sbm76node"
+
+
+################################################################################
+#
+# User Input Field - ejbServerJndiPort
+#
+#
+
+
+-W ws7xServerName.ejbServerJndiPort="16003"
+
+
+################################################################################
+#
+# User Input Field - portalHttpPort
+#
+#
+
+
+-W ws7xServerName.portalHttpPort="18793"
+
+
+################################################################################
+#
+# User Input Field - portalSslPort
+#
+#
+
+
+-W ws7xServerName.portalSslPort="18002"
+
+
+################################################################################
+#
+# User Input Field - portalServerJndiPort
+#
+#
+
+
+-W ws7xServerName.portalServerJndiPort="18003"
+
+
+################################################################################
+#
+# User Input Field - remoteAntPort
+#
+#
+
+
+-W ws7xServerName.remoteAntPort="14005"
+
+
+################################################################################
+#
+# User Input Field - url
+#
+#
+
+
+-W sbmURL.url="http://$W(host.name):18793"
+
+
+################################################################################
+#
+# User Input Field - smtpServer
+#
+#
+
+
+-W mail.smtpServer="mail"
+
+
+################################################################################
+#
+# User Input Field - sbmadminEMail
+#
+#
+
+
+-W mail.sbmadminEMail="sbmadmin@"
+
+
+################################################################################
+#
+# User Input Field - bizlogicEMail
+#
+#
+
+
+-W mail.bizlogicEMail="blemail@"
+
+
+################################################################################
+#
+# User Input Field - specifyBizLogicMail
+#
+#
+
+
+-W mail.specifyBizLogicMail=""
+
+
+################################################################################
+#
+# User Input Field - imapServer
+#
+#
+
+
+-W blmUserPw.imapServer="$W(mail.smtpServer)"
+
+
+################################################################################
+#
+# User Input Field - blmailUsername
+#
+#
+
+
+-W blmUserPw.blmailUsername="blemail"
+
+
+################################################################################
+#
+# User Input Field - blmailPassword
+#
+#
+
+
+-W blmUserPw.blmailPassword=""
+
+
+################################################################################
+#
+# User Input Field - confirmPw
+#
+#
+
+
+-W blmUserPw.confirmPw=""
+
+
+################################################################################
+#
+# User Input Field - umiChoice
+#
+#
+
+
+-W umi.umiChoice="jdbc"
+
+
+################################################################################
+#
+# User Input Field - umiChoice
+#
+#
+
+
+-W ldapRelamUMI.umiChoice="netscapeLDAP"
+
+
+################################################################################
+#
+# User Input Field - server
+#
+#
+
+
+-W nis.server="<NIS server>"
+
+
+################################################################################
+#
+# User Input Field - domain
+#
+#
+
+
+-W nis.domain="$W(getHn.domain)"
+
+
+################################################################################
+#
+# User Input Field - server
+#
+#
+
+
+-W ldap.server=""
+
+
+################################################################################
+#
+# User Input Field - port
+#
+#
+
+
+-W ldap.port=""
+
+
+################################################################################
+#
+# User Input Field - userRoot
+#
+#
+
+
+-W ldap.userRoot="$P(sbmComponent.userSearchRoot)"
+
+
+################################################################################
+#
+# User Input Field - groupRoot
+#
+#
+
+
+-W ldap.groupRoot="$P(sbmComponent.groupSearchRoot)"
+
+
+################################################################################
+#
+# User Input Field - ldapSSL
+#
+#
+
+
+-W ldap.ldapSSL=""
+
+
+################################################################################
+#
+# User Input Field - username
+#
+#
+
+
+-W ldapLogin.username=""
+
+
+################################################################################
+#
+# User Input Field - password
+#
+#
+
+
+-W ldapLogin.password=""
+
+
+################################################################################
+#
+# User Input Field - confirmPw
+#
+#
+
+
+-W ldapLogin.confirmPw=""
+
+
+################################################################################
+#
+# User Input Field - dbName
+#
+#
+
+
+-W dbChoice.dbName="oracle11g"
+
+
+################################################################################
+#
+# User Input Field - urlPrefix
+#
+#
+
+
+-W db.urlPrefix="jdbc:savvion:oracle://"
+
+
+################################################################################
+#
+# User Input Field - serverName
+#
+#
+
+
+-W db.serverName="oracle"
+
+
+################################################################################
+#
+# User Input Field - port
+#
+#
+
+
+-W db.port="1521"
+
+
+################################################################################
+#
+# User Input Field - sidName
+#
+#
+
+
+-W db.sidName="xe"
+
+
+################################################################################
+#
+# User Input Field - username
+#
+#
+
+
+-W dbLogin.username="system"
+
+
+################################################################################
+#
+# User Input Field - password
+#
+#
+
+
+-W dbLogin.password="oracle"
+
+
+################################################################################
+#
+# User Input Field - confirmPw
+#
+#
+
+
+-W dbLogin.confirmPw="oracle"
+
+
+################################################################################
+#
+# User Input Field - javaLocn
+#
+#
+
+
+-W javaLocn32BitPanel.javaLocn="$P(sbmComponent.javaHome)"
+
+
+################################################################################
+#
+# User Input Field - javaLocn
+#
+#
+
+
+-W javaLocn64BitPanelWin.javaLocn="$P(sbmComponent.javaHome)"
+
+
+################################################################################
+#
+# User Input Field - javaLocn
+#
+#
+
+
+-W javaLocn64BitPanelUnix.javaLocn="/usr/java/jdk1.6.0_45"
+
+
+################################################################################
+#
+# User Input Field - name
+#
+#
+
+
+-W sbmDesktopFolder.name="$P(sbmComponent.desktopFolderName)"
+
+
+################################################################################
+#
+# User Input Field - launchFirstSteps
+#
+#
+
+
+-W sbmDesktopFolder.launchFirstSteps="true"
+
+
+################################################################################
+#
+# Approval State
+#
+# The initial state of the Approval panel. Legal values are:
+# 
+#    0 - Nothing will be selected
+#    1 - "OK" will be selected
+#    2 - "More information" will be selected
+# 
+# For example, to configure the panel to initially display "More information",
+# use
+# 
+#    -W wsx6xUnixConfirm.selection=2
+#
+
+
+-W wsx6xUnixConfirm.selection=1

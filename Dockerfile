@@ -4,8 +4,7 @@ COPY ./jdk-6u45-linux-x64.bin /opt
 RUN ./opt/jdk-6u45-linux-x64.bin && mkdir /usr/java && mv ./jdk1.6.0_45 /usr/java
 ENV JAVA_HOME=/usr/java/jdk1.6.0_45  
 ENV JRE_HOME=$JAVA_HOME/jre  
-ENV JAVA_BIN=$JAVA_HOME/bin   
-ENV JRE_HOME=$JAVA_HOME/jre  JAVA_BIN=$JAVA_HOME/bin   
+ENV JAVA_BIN=$JAVA_HOME/bin      
 ENV CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib   
 ENV PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
 ## install  the weblogic server
@@ -13,7 +12,7 @@ ADD ./weblogic1036/ /usr/weblogic1036/
 ENV MW_HOME=/usr/weblogic1036
 RUN .$MW_HOME/configure.sh && .$MW_HOME/wlserver/server/bin/setWLSEnv.sh
 ##  install bpm server
-COPY ./winstream /opt
+COPY ./windstream /opt
 ## the silent file for install bpm
 COPY ./silent.xml /opt
 RUN ./opt/Installer/setuplinux.bin -options /opt/silent.xml -silent
